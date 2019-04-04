@@ -1,0 +1,13 @@
+<mat-card class="card">
+  <mat-card-content>
+    <mat-card-title-group>
+      <mat-card-title><strong class="country-code pointer" [routerLink]="['/page2', country.CountryName]">{{country.CountryCode ? country.CountryCode : "N/A"}}</strong>
+        <div class="pointer" [routerLink]="['/page2', country.CountryName]">{{country.CountryName}}</div>
+      </mat-card-title>
+      <mat-card-subtitle>{{country.CapitalName}}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-flat-button color="accent" [routerLink]="['/page2', country.CountryName]">View Weather</button>
+  </mat-card-actions>
+</mat-card>

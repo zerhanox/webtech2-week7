@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/']">Country List</button>
+  </mat-menu>
+
+  <span  class="pointer"[routerLink]="['/']">Weather Forecast</span>
+</mat-toolbar>
+<router-outlet class="container">
+</router-outlet>
